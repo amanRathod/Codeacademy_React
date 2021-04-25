@@ -23,3 +23,5 @@ export default function ColorPicker() {
     </div>
   );
 }
+
+export default ColorPicker.js;
