@@ -21,7 +21,6 @@ export default function ColorPicker() {
         CornflowerBlue
       </button>
     </div>
-  );
-}
+  )
 
-export default ColorPicker.js;
+  }
