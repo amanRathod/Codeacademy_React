@@ -6,9 +6,11 @@ export default function Counter() {
   const increment = () => setClickCount((prev) => prev + 1);
 
   useEffect(() => {
+    alert("component rendered for the first time");
     document.addEventListener('mousedown', increment);
     return () => {
-      document.removeEventListener('mousedown', increment);
+      alert("component is being removed from the DOM");
+      document.removeEventListener('mousedown', increment); // Specify how to clean up after this effect:
     };
   });
 
